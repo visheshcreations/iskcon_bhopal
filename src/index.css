@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+
+.great-vibes-regular {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @keyframes moveToRight {
+    100% {
+      transform: translatex(5%);
+    }
+    0% {
+      transform: translatex(100%);
+    }
+  }
+
+  @keyframes moveToLeft {
+    0% {
+      transform: translatex(-100%);
+    }
+    100% {
+      transform: translatex(5%);
+    }
+  }
+  
+.animate-move1 {
+  animation: moveToLeft 2s forwards;
+}
+.animate-move2 {
+  animation: moveToRight 2s forwards;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.fade-in.visible {
+  opacity: 1;
+}
+
+
