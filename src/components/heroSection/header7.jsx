@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import bgkrishna from '/public/iskcon-bhopal-mandir.webp';
 
 const Header7 = () => {
   const headerRef = useRef(null);
@@ -31,12 +32,10 @@ const Header7 = () => {
       <div
         ref={headerRef}
         className="relative w-11/12 md:w-3/4 h-40 md:h-72 bg-cover bg-center fade-in"
-        style={{
-          backgroundImage: "url('/src/assets/iskcon-bhopal-mandir.webp')",
-        }}
+        style={{ backgroundImage: `url(${bgkrishna})` }}
       >
         <div className="absolute inset-0 bg-red-800 bg-opacity-80 flex items-center">
-          <div className="flex justify-evenly items-center">
+          <div className="flex justify-evenly items-center w-full px-4">
             <div className="text-white flex gap-1 md:gap-4 flex-wrap w-2/3">
               <span className="text-yellow-300 font-bold text-[10px] md:text-lg">
                 ISKCON BHOPAL

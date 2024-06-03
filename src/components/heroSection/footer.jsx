@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
-import yourImage from "/public/iskcon-delhi-official-monk-f.png";
-import grass from "/public/grass.png";
-import logo from "/public/logo.webp";
+import yourImage from "/iskcon-delhi-official-monk-f.png";
+import grass from "/grass.png";
+import logo from "/logo.webp";
 import { FiFacebook } from "react-icons/fi";
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";

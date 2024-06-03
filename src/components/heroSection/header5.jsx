@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import Krishnapng from '/mahabharat.png';
+import blueangle from '/blueangle.png';
 
 const Header5 = () => {
   const imageRef = useRef(null);
@@ -27,7 +28,6 @@ const Header5 = () => {
       }
     };
   }, []);
-
 
   const headerRef = useRef(null);
 
@@ -57,15 +57,18 @@ const Header5 = () => {
   return (
     <div
       ref={footerRef}
-      
       style={{ backgroundImage: `url('/public/nitya-bg4.466defb8.jpg')` }}
+      className="bg-cover"
     >
       <div
-      ref={headerRef}
-        className="bg-cover flex justify-between items-center flex-wrap md:flex-nowrap fade-in"
-        style={{ backgroundImage: "url('/src/assets/blueangle.png')" }}
+        ref={headerRef}
+        className="relative flex justify-between items-center flex-wrap md:flex-nowrap fade-in"
       >
-        <div className="content gap-3 md:gap-5 mt-14 md:mt-0 md:mb-40 px-5 md:px-0 md:ml-6 text-[10px] md:text-[15px] md:w-2/4 h-96 flex items-center flex-col">
+        <div
+          className="absolute inset-0 bg-cover bg-no-repeat bg-center"
+          style={{ backgroundImage: `url(${blueangle})` }}
+        ></div>
+        <div className="relative z-10 content gap-3 md:gap-5 mt-40 md:mt-10 md:mb-40 px-5 md:px-0 md:ml-6 text-[10px] md:text-[15px] md:w-3/4 h-auto flex items-center flex-col">
           <div>
             <span className="text-white text-sm md:text-2xl">Karma</span>
           </div>
@@ -104,8 +107,8 @@ const Header5 = () => {
             </span>
           </div>
         </div>
-        <div className="imagepng flex justify-end">
-          <img id="animatedImage" ref={imageRef} src={Krishnapng} alt="Krishna" />
+        <div className="relative z-10 imagepng flex justify-end">
+          <img id="animatedImage" ref={imageRef} src={Krishnapng} alt="Krishna" className="z-10" />
         </div>
       </div>
     </div>

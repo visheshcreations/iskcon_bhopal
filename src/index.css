@@ -11,11 +11,11 @@
   }
 
   @keyframes moveToRight {
-    100% {
-      transform: translatex(5%);
-    }
     0% {
       transform: translatex(100%);
+    }
+    100% {
+      transform: translatex(5%);
     }
   }
 

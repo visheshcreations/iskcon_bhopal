@@ -11,12 +11,12 @@ const videos = {
 };
 
 const images = {
-  image1: '/src/assets/videoimg1.png',
-  image2: '/src/assets/videoimg2.png',
-  image3: '/src/assets/videoimg3.png',
-  image4: '/src/assets/videoimg4.png',
-  image5: '/src/assets/videoimg5.png',
-  image6: '/src/assets/videoimg6.png',
+  image1: '/videoimg1.png',
+  image2: '/videoimg2.png',
+  image3: '/videoimg3.png',
+  image4: '/videoimg4.png',
+  image5: '/videoimg5.png',
+  image6: '/videoimg6.png',
 };
 
 const Header6 = () => {
